@@ -1,5 +1,5 @@
 # funchero.js
-A library for writing functional code, simply put - funny :)
+A library for writing functional code
 
 ## Documentation
 
