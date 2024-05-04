@@ -4,9 +4,9 @@
     "email": "aastoliarov02@gmail.com",
     "url": "https://github.com/zer01one"
   },
-  "name": "funny",
+  "name": "funlib",
   "version": "1.0.0",
-  "main": "dist/funny.js",
+  "main": "dist/funlib.js",
   "files": [
     "dist",
     "LICENSE",
@@ -16,7 +16,7 @@
     "build": "gulp"
   },
   "keywords": [
-    "funny",
+    "funlib",
     "functionality",
     "library"
   ],

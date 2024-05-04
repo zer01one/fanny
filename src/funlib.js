@@ -1,13 +1,13 @@
 /**
  * Функциональная библиотека
- * @module funny
+ * @module funlib
  */
 
 ; (function (name, definition) {
     if (typeof module !== 'undefined') module.exports = definition();
     else if (typeof define === 'function' && typeof define.amd === 'object') define(definition);
     else this[name] = definition();
-}('funny', /** @lends module:funny */ function () {
+}('funlib', /** @lends module:funlib */ function () {
     /**
      * Returns a curried version of the given function. The curried function takes a variable number of arguments
      * and returns a new function that takes the remaining arguments until the function is fully applied.
