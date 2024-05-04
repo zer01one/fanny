@@ -1,4 +1,4 @@
-# fanny.js
+# funсlib.js
 A library for writing functional code, simply put - funny :)
 
 ## Documentation
