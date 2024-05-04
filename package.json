@@ -4,9 +4,9 @@
     "email": "aastoliarov02@gmail.com",
     "url": "https://github.com/zer01one"
   },
-  "name": "funсlib",
+  "name": "sem",
   "version": "1.0.0",
-  "main": "dist/funсlib.js",
+  "main": "dist/sem.js",
   "files": [
     "dist",
     "LICENSE",
@@ -16,7 +16,7 @@
     "build": "gulp"
   },
   "keywords": [
-    "funсlib",
+    "sem",
     "functionality",
     "library"
   ],

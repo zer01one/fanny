@@ -1,13 +1,13 @@
 /**
  * Функциональная библиотека
- * @module funсlib
+ * @module Sem
  */
 
 ; (function (name, definition) {
     if (typeof module !== 'undefined') module.exports = definition();
     else if (typeof define === 'function' && typeof define.amd === 'object') define(definition);
     else this[name] = definition();
-}('funсlib', /** @lends module:funсlib */ function () {
+}('Sem', /** @lends module:Sem */ function () {
     /**
      * Returns a curried version of the given function. The curried function takes a variable number of arguments
      * and returns a new function that takes the remaining arguments until the function is fully applied.

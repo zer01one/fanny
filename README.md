@@ -1,4 +1,4 @@
-# funсlib.js
+# sem.js
 A library for writing functional code, simply put - funny :)
 
 ## Documentation
