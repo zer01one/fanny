@@ -1,12 +1,33 @@
 {
+  "author": {
+    "name": "Alexandr Stoliarov",
+    "email": "aastoliarov02@gmail.com",
+    "url": "https://github.com/zer01one"
+  },
   "name": "funny",
   "version": "1.0.0",
-  "main": "funny.js",
+  "main": "dist/funny.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "start": "node test.js"
+    "build": "gulp"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "funny",
+    "functionality",
+    "library"
+  ],
+  "license": "MIT",
+  "description": "A library for writing functional code, simply put - funny :)",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zer01one/fanny"
+  }
 }
