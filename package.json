@@ -1,0 +1,12 @@
+{
+  "name": "funny",
+  "version": "1.0.0",
+  "main": "funny.js",
+  "scripts": {
+    "start": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
