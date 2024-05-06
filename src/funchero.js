@@ -66,7 +66,9 @@
      */
     function alt(...funcs) {
         return function (param) {
-            return funcs.map(func => func(param)).find(Boolean);
+            return (function rec(i = 0) {
+                return !funcs[i] ? undefined : (funcs[i](param) || rec(++i));
+            })();
         }
     }
 
@@ -135,6 +137,33 @@
         return promise.catch(func);
     });
 
+    function mem(func) {
+        function memoized(...params) {
+            return alt(
+                function (params) {
+                    console.log('Mem use');
+                    const hash = createHashString(...params);
+                    console.log('Mem use hash', hash, 'has', memoized._cache.has(hash), 'get', memoized._cache.get(hash));
+
+                    if (memoized._cache.has(hash)) return memoized._cache.get(hash);
+                },
+                function (params) {
+                    console.log('Mem set');
+                    const hash = createHashString(...params);
+                    return memoized._cache.set(hash, func(...params)).get(hash);
+                }
+            )(params);
+        }
+
+        memoized._cache = new Map();
+
+        return memoized;
+    }
+
+    function createHashString(...params) {
+        return params.join('_');
+    }
+
     return {
         curry,
         compose,
@@ -146,6 +175,7 @@
         safe,
         promising,
         cThen,
-        cCatch
+        cCatch,
+        mem
     }
 }));
