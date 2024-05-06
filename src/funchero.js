@@ -34,6 +34,14 @@
         }
     }
 
+    function composeWait(...funcs) {
+        return function (param) {
+            return (async function rec(i, param) {
+                return !funcs[i] ? param : rec(i - 1, await funcs[i](param));
+            })(funcs.length - 1, param);
+        }
+    }
+
     /**
      * A function that takes a function as a parameter and returns a new function that executes the given function and returns the parameter.
      *
@@ -162,6 +170,7 @@
     return {
         curry,
         compose,
+        composeWait,
         identify,
         tap,
         alt,
