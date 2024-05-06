@@ -1,5 +1,5 @@
 # funchero.js
-A library for writing functional code
+Библиотека для написания функционального кода
 
 [Планирование](https://github.com/users/zer01one/projects/1)
 
