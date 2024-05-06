@@ -71,6 +71,7 @@
             })();
         }
     }
+    // Еуые
 
     /**
      * Returns a function that executes a sequence of functions with a given parameter.
