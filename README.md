@@ -1,8 +1,6 @@
 # funchero.js
 Библиотека для написания функционального кода
 
-[Планирование](https://github.com/users/zer01one/projects/1)
-
 ## Documentation
 
 ### curry
