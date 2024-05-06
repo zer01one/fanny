@@ -71,7 +71,6 @@
             })();
         }
     }
-    // Еуые
 
     /**
      * Returns a function that executes a sequence of functions with a given parameter.
@@ -142,14 +141,9 @@
         function memoized(...params) {
             return alt(
                 function (params) {
-                    console.log('Mem use');
-                    const hash = createHashString(...params);
-                    console.log('Mem use hash', hash, 'has', memoized._cache.has(hash), 'get', memoized._cache.get(hash));
-
-                    if (memoized._cache.has(hash)) return memoized._cache.get(hash);
+                    return memoized._cache.get(createHashString(...params));
                 },
                 function (params) {
-                    console.log('Mem set');
                     const hash = createHashString(...params);
                     return memoized._cache.set(hash, func(...params)).get(hash);
                 }
