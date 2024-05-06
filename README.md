@@ -1,6 +1,8 @@
 # funchero.js
 A library for writing functional code
 
+[Планирование](https://github.com/users/zer01one/projects/1)
+
 ## Documentation
 
 ### curry
